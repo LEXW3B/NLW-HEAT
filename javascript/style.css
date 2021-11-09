@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+}
+html, body{
+    --black: hsl(240, 6%, 13%);/*vira uma variavel */
+    --grey: hsl(240, 9%, 89% );/*vira uma variavel */
+
+    
+    height: 100%;
+    font-family: 'roboto', sans-serif ,arial;
+    color: rgb(229, 237, 245);
+    -webkit-font-smoothing: antialiased;/*deixa a fonte mais suave "BONITA" aprenas em navegadores que tenha -webkit*/
+}
+body{
+    display: grid;
+    place-items: center;
+}
+main{
+    background: url(imagens/wp2679567-abstract-phone-wallpapers.jpg);
+    width: 375px;
+    height: 812px;
+}
+.container{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--grey);
+}
+.avatar{
+    width: 10rem;/*1rem = 16px*/
+    margin: 11.5rem auto 0;
+
+    position: relative;
+}
+.avatar span{
+    position: absolute;
+    top: -15px;
+    z-index: 1;/*eixo de dimensão ou profundidade e o 'Z' */
+    
+}
+.avatar > img{
+    width: 10rem;
+    height: 11.5rem;/*fica desproporcional para resolver usa o object-fit*/
+
+    object-fit: cover;/*vai deixar proporcional o objeto por completo*/
+    clip-path: circle(50% at 50% 50%);
+}
+h1{
+    font-size: 1.5rem;
+
+    margin-top: 1.5rem;
+}
+a{
+    color: var(--grey);    
+    text-decoration: none;
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-top: 2rem;
+}
+ul{
+    margin-top: 4rem;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    display: flex;/*para ficar o icone em linha e liberar o justify-content e o gap*/
+    gap: 1rem;/*da uns espaços entre os icones parecido com o padding*/
+    justify-content: center;/*centraliza*/
+}
+.link:hover:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

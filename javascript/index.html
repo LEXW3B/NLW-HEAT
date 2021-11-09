@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="LEXW3B">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="avatar">
+                
+                <img src="imagens/minha foto.jpg" style="height: 145px;" alt="Foto Pessoal">
+
+            <h1 id="userName">Alexandre</h1>
+            <a class="link" href="https://github.com/LEXW3B" target="_blank">
+                <img src="imagens/github_logo_icon_143772.svg" style="height: 20px;" alt="Imagem do icone do git hub">
+                LEXW3B
+            </a> 
+                   
+            <p>Um estudante da engenharia de softwear e com focu em desenvolvimeto web
+            </p>
+            </div>
+        </div>         
+        
+        <ul id="socialLinks">
+            <li   class="youtube">                 
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="imagens/youtube_black_logo_icon_147044.svg"     alt="icon youtube">
+                        
+                </a> 
+            </li>
+    
+            <li class="facebook">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="imagens/social_facebook_fb_35.png" style="height: 48px;" alt="icon facebook">
+                </a> 
+            </li>
+    
+            <li class="instagram">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="imagens/social_instagram_3.png" style="height: 48px;"  alt="icon">
+                </a> 
+            </li>
+    
+            <li class="twitter">
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="imagens/social_Twitter_38.png" style="height: 48px;"  alt="icon twitter">
+                </a> 
+            </li>
+        </ul>
+
+    </main>
+
+    <script>
+        /*tipos de dados primitivos - STRING='texto' - NUMBER='número' -BOOLEAN= 'True & False'
+        //variavel - guarda algum dado na variavel escolhida                       Ex:. const nome ='Alex', então onde eu por a variavel 'nome' será o mesmo que por Alex.
+        //variavéis:  let & const - let='pode ser trocado a qualquer momento'                  - const='É definitivo e não pode ser trocado'
+        //estrutura de dados do tipo objeto - ele e criado quando coloca uma variavél e iguala ela depois com chaves                                    ex:. const oqueTemEmCasa = {
+            cadeira = 4,
+            mesa = 1,
+            vaso = true,
+            prato = false
+
+        //função - uma forma de agrupar comandos e ações pro javascript
+        ex:. function mudaTela(){
+            aqui dentro e a ação
+        }
+        //tipos de escrita de variaveis:
+        camelCase = começa minuscula e depois o inicio das proximas e maiusculas
+        PascalCase = todo inicio de palavra e escrito em mausculo
+        snake_case = toda escrita em minuscula mas separada por underline '_'
+        
+        }*/
+
+
+        
+        const linksSocialMedias = {
+            github : 'LEXW3B',
+            youtube : 'youtube',
+            facebook : 'ALEXMANSON666/',
+            instagram : 'alexmanson13/',
+            twitter : 'alex79146823'
+        }
+
+        function changeSocialMediaLinks(){
+            for(let li of socialLinks.children){
+                const social = li.getAttribute('class')
+
+                li.children[0].href = `https://${social}.com/${linksSocialMedias[social]}`
+            }
+        }
+        
+        changeSocialMediaLinks()
+        
+
+
+    </script>
+    
+</body>
+</html>
