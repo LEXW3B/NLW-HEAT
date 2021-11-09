@@ -20,14 +20,19 @@ changeSocialMediaLinks()
 function getGitHubProfileInfos(){
     const url = `https://api.github.com/users/${linksSocialMedias.github}`
 
-    fetch(url).then(Response =>)
-
-
-    
+    fetch(url).then(Response => Response.json())/*fetch pegou a resposta da url e jogou pra promessa "then" que pegou e transformou em json*/
+    .then(data => {
+        userName.textContent = data.name
+        userBio.textContent = data.bio
+        userLink.href = data.html_url
+        userPhoto.src = data.avatar_url
+        userLogin.textContent = data.login
+    })
 }
-// getGitHubProfileInfos()
+
+getGitHubProfileInfos()
 
 
 
 
-//1:01:24
+

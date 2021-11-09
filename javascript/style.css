@@ -47,10 +47,10 @@ main{
     object-fit: cover;/*vai deixar proporcional o objeto por completo*/
     clip-path: circle(50% at 50% 50%);
 }
-h1{
+#userLogin{
     font-size: 1.5rem;
-
-    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    margin-top: 15.5rem;
 }
 a{
     color: var(--grey);    
@@ -74,7 +74,7 @@ ul{
     gap: 1rem;/*da uns espaços entre os icones parecido com o padding*/
     justify-content: center;/*centraliza*/
 }
-.link:hover:hover{
+#userLink:hover:hover{
     color: red;
 }
 
