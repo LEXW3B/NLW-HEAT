@@ -48,15 +48,17 @@ main{
     clip-path: circle(50% at 50% 50%);
 }
 #userLogin{
+    top: -.1rem;/*baixa o link LEXW3B */
     font-size: 1.5rem;
     margin-top: 15.5rem;
 }
+
 a{
     color: var(--grey);    
     text-decoration: none;
-    margin-top: 0.25rem;
+    margin-top: .0rem;/*baixa o logo do git*/
 
-    display: flex;
+    display:flex;
     gap: 0.75rem;
     justify-content: center;
     align-items: center;
